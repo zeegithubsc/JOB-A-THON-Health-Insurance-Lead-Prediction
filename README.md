@@ -72,3 +72,35 @@ Test data is further divided into Public 40% and Private 60%
 •	Your initial responses will be checked and scored on the Public data.
 
 •	The final rankings would be based on your private score which will be published once the competition is over.
+
+## Rank 71 Solution Description
+
+The solution is an ensemble of two catboost models. One with basic features and another with a more elaborate feature engineering
+
+### Model 1 (catboost_4)
+
+This catboost model uses  basic features. Below categorical features were label encoded and used in the model.
+
+['City_Code', 'Region_Code', 'Accomodation_Type',  'Reco_Insurance_Type','Is_Spouse',
+  'Health Indicator', 'Holding_Policy_Duration','Holding_Policy_Type',  'Reco_Policy_Cat']
+
+### Model 2 (catboost_2)
+
+This catboost model uses  a more elaborate feature engineering. Statistical features (mean, median, standard deviations were created) for the numeric variable - Lower_Age, Upper_Age, Reco_Policy_Premium based on the groupings for Reco_Policy_Cat, Region_Code and combination of Reco_Policy_Cat and Region_Code.
+
+### Ensemble
+Simple weighted average with equal weights were taken for the output of Model 1 and Model 2.
+
+### Execution sequence
+Execute notebooks in the below order
+Catboost_2.ipynb  catboost_4.ipynb  ensemble.ipynb
+
+### Environment
+
+Below are versions of the main packages used
+
+Pandas = 1.1.3
+Numpy = 1.19.2
+Catboost = 0.24.4
+Sklearn = 0.23.2
+
