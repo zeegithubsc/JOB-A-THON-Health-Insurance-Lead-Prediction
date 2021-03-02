@@ -1,5 +1,11 @@
 # JOB-A-THON-Health-Insurance-Lead-Prediction (Rank 71 Solution)
 
+## Competition Link
+https://datahack.analyticsvidhya.com/contest/job-a-thon/
+
+## Leaderboard Link
+https://datahack.analyticsvidhya.com/contest/job-a-thon/#LeaderBoard
+
 ## Problem Statment
 
 Your Client FinMan is a financial services company that provides various financial services like loan, investment funds, insurance etc. to its customers. FinMan wishes to cross-sell health insurance to the existing customers who may or may not hold insurance policies with the company. The company recommend health insurance to it's customers based on their profile once these customers land on the website. Customers might browse the recommended health insurance policy and consequently fill up a form to apply. When these customers fill-up the form, their Response towards the policy is considered positive and they are classified as a lead.
@@ -74,6 +80,10 @@ Test data is further divided into Public 40% and Private 60%
 •	The final rankings would be based on your private score which will be published once the competition is over.
 
 ## Rank 71 Solution Description
+
+Public Score: 0.813334134298148, Private Score: 0.805105883989387
+
+Public Leaderboard rank: 42, Private Leaderboard rank: 71
 
 The solution is an ensemble of two catboost models. One with basic features and another with a more elaborate feature engineering
 
