@@ -93,14 +93,17 @@ Simple weighted average with equal weights were taken for the output of Model 1 
 
 ### Execution sequence
 Execute notebooks in the below order
-Catboost_2.ipynb  catboost_4.ipynb  ensemble.ipynb
+Catboost_2.ipynb --> catboost_4.ipynb -->  ensemble.ipynb
 
 ### Environment
 
 Below are versions of the main packages used
 
-Pandas = 1.1.3
-Numpy = 1.19.2
-Catboost = 0.24.4
-Sklearn = 0.23.2
+  * Pandas = 1.1.3
+  
+  * Numpy = 1.19.2
+  
+  * Catboost = 0.24.4
+
+  * Sklearn = 0.23.2
 
