@@ -68,6 +68,7 @@ The evaluation metric for this competition is roc_auc_score across all entries i
 
 ## Public and Private Split
 Test data is further divided into Public 40% and Private 60%
+
 •	Your initial responses will be checked and scored on the Public data.
 
 •	The final rankings would be based on your private score which will be published once the competition is over.
