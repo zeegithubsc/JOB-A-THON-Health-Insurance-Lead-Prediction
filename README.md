@@ -33,41 +33,38 @@ Reco_Policy_Cat|Encoded value for recommended health insurance
 Reco_Policy_Premium|Annual Premium (INR) for the recommended health insurance
 Response (Target)|0 : Customer did not show interest in the recommended policy, 1 : Customer showed interest in the recommended policy
 
-Test Data
-Variable	Definition
-ID	Unique Identifier for a row
-City_Code	Code for the City of the customers
-Region_Code	Code for the Region of the customers
-Accomodation_Type	Customer Owns or Rents the house
-Reco_Insurance_Type	Joint or Individual type for the recommended insurance
-Upper_Age	Maximum age of the customer 
-Lower _Age	Minimum age of the customer
-Is_Spouse	If the customers are married to each other
-(in case of joint insurance) 
-Health_Indicator
-	Encoded values for health of the customer
+### Test Data
 
-Holding_Policy_Duration	Duration (in years) of holding policy (a policy that customer has already subscribed to with the company)
-Holding_Policy_Type
-	Type of holding policy
-
-Reco_Policy_Cat	Encoded value for recommended health insurance
-Reco_Policy_Premium	Annual Premium (INR) for the recommended health insurance
+Variable|Definition
+|---|---|
+ID|Unique Identifier for a row
+City_Code|Code for the City of the customers
+Region_Code|Code for the Region of the customers
+Accomodation_Type|Customer Owns or Rents the house
+Reco_Insurance_Type|Joint or Individual type for the recommended insurance  
+Upper_Age|Maximum age of the customer 
+Lower _Age|Minimum age of the customer
+Is_Spouse|If the customers are married to each other (in case of joint insurance) 
+Health_Indicator|Encoded values for health of the customer
+Holding_Policy_Duration|Duration (in years) of holding policy (a policy that customer has already subscribed to with the company)
+Holding_Policy_Type|Type of holding policy
+Reco_Policy_Cat|Encoded value for recommended health insurance
+Reco_Policy_Premium|Annual Premium (INR) for the recommended health insurance
 
 
-Sample Submission
+### Sample Submission
 
 This file contains the exact submission format for the predictions. Please submit CSV file only.
-Variable	Definition
-ID	Unique Identifier for a row
-Response	(Target) Probability of Customer showing interest (class 1)
 
+Variable|	Definition
+|---|---|
+ID|	Unique Identifier for a row
+Response|	(Target) Probability of Customer showing interest (class 1)
 
-Evaluation
+## Evaluation
 The evaluation metric for this competition is roc_auc_score across all entries in the test set.
 
-
-Public and Private Split
+## Public and Private Split
 Test data is further divided into Public 40% and Private 60%
 •	Your initial responses will be checked and scored on the Public data.
 •	The final rankings would be based on your private score which will be published once the competition is over.
