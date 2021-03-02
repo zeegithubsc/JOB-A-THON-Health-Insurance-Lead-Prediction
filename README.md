@@ -7,7 +7,9 @@ Once these leads are acquired, the sales advisors approach them to convert and t
 Now the company needs your help in building a model to predict whether the person will be interested in their proposed Health plan/policy given the information about:
 
 •	Demographics (city, age, region etc.)
+
 •	Information regarding holding policies of the customer
+
 •	Recommended Policy Information
 
 
@@ -67,4 +69,5 @@ The evaluation metric for this competition is roc_auc_score across all entries i
 ## Public and Private Split
 Test data is further divided into Public 40% and Private 60%
 •	Your initial responses will be checked and scored on the Public data.
+
 •	The final rankings would be based on your private score which will be published once the competition is over.
